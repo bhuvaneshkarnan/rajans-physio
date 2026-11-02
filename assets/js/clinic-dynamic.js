@@ -327,6 +327,66 @@
     });
   }
 
+
+  // 7. Mobile Navigation Drawer Toggle Handler
+  function setupMobileNav() {
+    var menuButtons = document.querySelectorAll('.menu-button, .w-nav-button');
+    var navMenus = document.querySelectorAll('.nav-menu, .w-nav-menu');
+
+    menuButtons.forEach(function (btn) {
+      btn.addEventListener('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        var isOpen = btn.classList.contains('open') || btn.classList.contains('w--open');
+        
+        if (isOpen) {
+          btn.classList.remove('open', 'w--open');
+          navMenus.forEach(function (m) { m.classList.remove('open', 'w--nav-menu-open'); });
+          document.body.classList.remove('nav-menu-open');
+        } else {
+          btn.classList.add('open', 'w--open');
+          navMenus.forEach(function (m) { m.classList.add('open', 'w--nav-menu-open'); });
+          document.body.classList.add('nav-menu-open');
+        }
+      });
+    });
+
+    // Close mobile nav when clicking any regular nav link
+    document.querySelectorAll('.nav-menu a:not(.w-dropdown-toggle), .w-nav-menu a:not(.w-dropdown-toggle)').forEach(function (link) {
+      link.addEventListener('click', function () {
+        menuButtons.forEach(function (b) { b.classList.remove('open', 'w--open'); });
+        navMenus.forEach(function (m) { m.classList.remove('open', 'w--nav-menu-open'); });
+        document.body.classList.remove('nav-menu-open');
+      });
+    });
+
+    // Mobile dropdown accordion for Services
+    document.querySelectorAll('.nav-menu .w-dropdown-toggle, .w-nav-menu .w-dropdown-toggle').forEach(function (toggle) {
+      toggle.addEventListener('click', function (e) {
+        if (window.innerWidth <= 991) {
+          e.preventDefault();
+          e.stopPropagation();
+          var list = this.parentElement ? this.parentElement.querySelector('.w-dropdown-list') : null;
+          if (list) {
+            var isShown = list.classList.contains('open') || list.classList.contains('w--open');
+            list.classList.toggle('open', !isShown);
+            list.classList.toggle('w--open', !isShown);
+            list.style.display = isShown ? 'none' : 'block';
+          }
+        }
+      });
+    });
+
+    // Close when clicking outside navbar
+    document.addEventListener('click', function (e) {
+      if (!e.target.closest('.navbar') && document.body.classList.contains('nav-menu-open')) {
+        menuButtons.forEach(function (b) { b.classList.remove('open', 'w--open'); });
+        navMenus.forEach(function (m) { m.classList.remove('open', 'w--nav-menu-open'); });
+        document.body.classList.remove('nav-menu-open');
+      }
+    });
+  }
+
   // 8. Initialize on DOM Ready
   function init() {
     injectUIElements();
@@ -335,6 +395,7 @@
     setupSmoothMomentumScroll();
     setupFAQAccordions();
     setupSmoothAnchors();
+    setupMobileNav();
   }
 
   if (document.readyState === 'loading') {

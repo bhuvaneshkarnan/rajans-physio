@@ -386,7 +386,7 @@ def render_service_page(service, depth_prefix):
           <span style="color:#233E85; font-weight:700;">{service["slug"].replace('-', ' ').title()}</span>
         </div>
 
-        <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap:48px; align-items:center;">
+        <div class="hero-grid">
           <div>
             <div class="clinic-badge">
               {service["icon"]} {service["badge"]}

@@ -25,8 +25,8 @@
           </div>
         </a>
 
-        <!-- NAV LINKS -->
-        <nav role="navigation" class="nav-menu w-nav-menu" style="display:flex; align-items:center;">
+        <!-- NAV LINKS (Cleanly controlled via CSS for Desktop & Mobile) -->
+        <nav role="navigation" class="nav-menu w-nav-menu">
           <a href="./" class="nav__link w-nav-link w--current">Home</a>
           <a href="about.html" class="nav__link w-nav-link ">About Us</a>
           
@@ -53,13 +53,18 @@
           <a href="faq.html" class="nav__link w-nav-link ">FAQ</a>
           <a href="free-assessment.html" class="nav__link w-nav-link ">Pain Checker</a>
           <a href="contact.html" class="nav__link w-nav-link ">Contact</a>
-          <a href="tel:9042612895" class="button w-button nav-btn" style="margin-left:12px; background:#233E85; color:#FFFFFF; padding:9px 18px; font-size:13.5px; display:inline-flex; align-items:center; gap:8px;">
+          <a href="tel:9042612895" class="button w-button nav-btn" style="background:#233E85; color:#FFFFFF; padding:9px 18px; font-size:13.5px; display:inline-flex; align-items:center; gap:8px;">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> <span>90426 12895</span>
           </a>
         </nav>
 
-        <div class="menu-button w-nav-button">
-          <div class="icon w-icon-nav-menu"></div>
+        <!-- HAMBURGER BUTTON -->
+        <div class="menu-button w-nav-button" aria-label="Toggle navigation" role="button" tabindex="0">
+          <svg class="hamburger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#233E85" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:block; flex-shrink:0;">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
         </div>
       </div>
     </div>
@@ -69,7 +74,7 @@
     <!-- HERO SECTION -->
     <section class="section section--hero" style="background:#FAF6EE; padding:60px 0 72px 0;">
       <div class="container w-container">
-        <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap:48px; align-items:center;">
+        <div class="hero-grid">
           <div>
             <div class="clinic-badge">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#233E85" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><polyline points="9 12 11 14 15 10"></polyline></svg> 17 Years of Clinical Excellence &bull; Est. 2009
@@ -78,10 +83,10 @@
               Pain-free living starts <span class="highlight highlight--line" style="display:inline; line-height:inherit;">here.</span>
             </h1>
             <p class="text-lead" style="margin-bottom:24px;">
-              Over 15,000 patients successfully treated without surgery. We diagnose the biomechanical root cause of your pain—restoring mobility, freedom, and strength.
+              Over 15,000 patients successfully treated without surgery. We diagnose the biomechanical root cause of your pain &mdash; restoring mobility, freedom, and strength.
             </p>
 
-            <div style="display:flex; flex-wrap:wrap; gap:16px; margin-bottom:28px;">
+            <div class="hero-ratings-group" style="display:flex; flex-wrap:wrap; gap:16px; margin-bottom:28px;">
               <div style="display:flex; align-items:center; gap:8px; font-size:14px; font-weight:600; color:#233E85;">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ED1D7F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><polyline points="20 6 9 17 4 12"></polyline></svg> Practo 99% Recommended (513+ Ratings)
               </div>
@@ -90,7 +95,7 @@
               </div>
             </div>
 
-            <div style="display:flex; flex-wrap:wrap; gap:14px; margin-bottom:32px;">
+            <div class="hero-cta-group" style="display:flex; flex-wrap:wrap; gap:14px; margin-bottom:32px;">
               <a href="https://wa.me/919042612895?text=Hello%20Dr.%20Prabhu%2C%20I%20would%20like%20to%20book%20a%20consultation" target="_blank" class="btn-whatsapp">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0;"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.53 7.32C9.36 7.32 9.09 7.38 8.86 7.63C8.63 7.88 7.98 8.49 7.98 9.73C7.98 10.97 8.88 12.17 9.01 12.34C9.14 12.51 10.77 15.02 13.27 16.1C13.86 16.36 14.33 16.51 14.68 16.62C15.28 16.82 15.82 16.79 16.26 16.72C16.75 16.65 17.76 16.11 17.97 15.52C18.18 14.93 18.18 14.43 18.11 14.32C18.05 14.21 17.88 14.15 17.62 14.02C17.37 13.89 16.13 13.28 15.9 13.2C15.68 13.11 15.51 13.07 15.34 13.32C15.17 13.57 14.69 14.15 14.55 14.32C14.4 14.48 14.26 14.51 14.01 14.38C13.75 14.25 12.93 13.99 11.96 13.12C11.2 12.44 10.69 11.61 10.54 11.36C10.4 11.11 10.53 10.97 10.66 10.84C10.77 10.73 10.91 10.54 11.05 10.38C11.19 10.21 11.23 10.09 11.32 9.92C11.41 9.75 11.36 9.61 11.3 9.48C11.23 9.36 10.72 8.1 10.51 7.59C10.3 7.09 10.09 7.16 9.93 7.15C9.79 7.14 9.62 7.32 9.53 7.32Z"/></svg> Book via WhatsApp
               </a>
@@ -99,28 +104,28 @@
               </a>
             </div>
 
-            <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap:16px; padding-top:20px; border-top:1px solid #E2E8F0;">
+            <div class="hero-stats-grid" style="display:grid; grid-template-columns: repeat(3, 1fr); gap:16px; padding-top:20px; border-top:1px solid #E2E8F0;">
               <div>
                 <div data-counter="17" data-suffix="+" style="font-family:'Recoleta',Georgia,serif; font-size:26px; font-weight:700; color:#233E85; line-height:1.1;">17+</div>
-                <div style="font-size:12px; color:#536B88; font-weight:600; text-transform:uppercase;">Years Experience</div>
+                <div class="hero-stat-label" style="font-size:12px; color:#536B88; font-weight:600; text-transform:uppercase;">Years Experience</div>
               </div>
               <div>
                 <div data-counter="15000" data-suffix="+" style="font-family:'Recoleta',Georgia,serif; font-size:26px; font-weight:700; color:#233E85; line-height:1.1;">15,000+</div>
-                <div style="font-size:12px; color:#536B88; font-weight:600; text-transform:uppercase;">Patients Healed</div>
+                <div class="hero-stat-label" style="font-size:12px; color:#536B88; font-weight:600; text-transform:uppercase;">Patients Healed</div>
               </div>
               <div>
                 <div data-counter="99" data-suffix="%" style="font-family:'Recoleta',Georgia,serif; font-size:26px; font-weight:700; color:#233E85; line-height:1.1;">99%</div>
-                <div style="font-size:12px; color:#536B88; font-weight:600; text-transform:uppercase;">Practo Score</div>
+                <div class="hero-stat-label" style="font-size:12px; color:#536B88; font-weight:600; text-transform:uppercase;">Practo Score</div>
               </div>
             </div>
           </div>
 
           <div style="position:relative;">
             <div class="photo-card reveal-blur" style="">
-              <img src="assets/images/dr_prabhu_rajan_profile.jpg" alt="Dr. Prabhu Rajan, PT" style="width:100%; height:440px; object-fit:cover; display:block;" loading="eager"/>
+              <img src="assets/images/dr_prabhu_rajan_profile.jpg" alt="Dr. Prabhu Rajan, PT" class="hero-doctor-img" loading="eager"/>
             </div>
             
-            <div class="reveal-blur" style="position:absolute; bottom:20px; left:20px; right:20px; background:rgba(255,255,255,0.95); backdrop-filter:blur(8px); border-radius:14px; padding:16px 20px;  border:1px solid #EEF2F4;">
+            <div class="reveal-blur hero-doctor-badge" style="position:absolute; bottom:20px; left:20px; right:20px; background:rgba(255,255,255,0.95); backdrop-filter:blur(8px); border-radius:14px; padding:16px 20px;  border:1px solid #EEF2F4;">
               <div style="display:flex; justify-content:space-between; align-items:center;">
                 <div>
                   <div style="font-family:'Recoleta',Georgia,serif; font-size:18px; font-weight:700; color:#233E85; line-height:1.2;">Dr. Prabhu Rajan, PT</div>

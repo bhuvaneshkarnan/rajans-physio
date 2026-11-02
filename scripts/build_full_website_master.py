@@ -31,7 +31,7 @@ def render_homepage():
     <!-- HERO SECTION -->
     <section class="section section--hero" style="background:#FAF6EE; padding:60px 0 72px 0;">
       <div class="container w-container">
-        <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap:48px; align-items:center;">
+        <div class="hero-grid">
           <div>
             <div class="clinic-badge">
               {SVG_SHIELD} 17 Years of Clinical Excellence &bull; Est. 2009
@@ -40,10 +40,10 @@ def render_homepage():
               Pain-free living starts <span class="highlight highlight--line" style="display:inline; line-height:inherit;">here.</span>
             </h1>
             <p class="text-lead" style="margin-bottom:24px;">
-              Over 15,000 patients successfully treated without surgery. We diagnose the biomechanical root cause of your pain—restoring mobility, freedom, and strength.
+              Over 15,000 patients successfully treated without surgery. We diagnose the biomechanical root cause of your pain &mdash; restoring mobility, freedom, and strength.
             </p>
 
-            <div style="display:flex; flex-wrap:wrap; gap:16px; margin-bottom:28px;">
+            <div class="hero-ratings-group" style="display:flex; flex-wrap:wrap; gap:16px; margin-bottom:28px;">
               <div style="display:flex; align-items:center; gap:8px; font-size:14px; font-weight:600; color:#233E85;">
                 {SVG_CHECK} Practo 99% Recommended (513+ Ratings)
               </div>
@@ -52,7 +52,7 @@ def render_homepage():
               </div>
             </div>
 
-            <div style="display:flex; flex-wrap:wrap; gap:14px; margin-bottom:32px;">
+            <div class="hero-cta-group" style="display:flex; flex-wrap:wrap; gap:14px; margin-bottom:32px;">
               <a href="https://wa.me/919042612895?text=Hello%20Dr.%20Prabhu%2C%20I%20would%20like%20to%20book%20a%20consultation" target="_blank" class="btn-whatsapp">
                 {SVG_WHATSAPP} Book via WhatsApp
               </a>
@@ -61,28 +61,28 @@ def render_homepage():
               </a>
             </div>
 
-            <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap:16px; padding-top:20px; border-top:1px solid #E2E8F0;">
+            <div class="hero-stats-grid" style="display:grid; grid-template-columns: repeat(3, 1fr); gap:16px; padding-top:20px; border-top:1px solid #E2E8F0;">
               <div>
                 <div data-counter="17" data-suffix="+" style="font-family:'Recoleta',Georgia,serif; font-size:26px; font-weight:700; color:#233E85; line-height:1.1;">17+</div>
-                <div style="font-size:12px; color:#536B88; font-weight:600; text-transform:uppercase;">Years Experience</div>
+                <div class="hero-stat-label" style="font-size:12px; color:#536B88; font-weight:600; text-transform:uppercase;">Years Experience</div>
               </div>
               <div>
                 <div data-counter="15000" data-suffix="+" style="font-family:'Recoleta',Georgia,serif; font-size:26px; font-weight:700; color:#233E85; line-height:1.1;">15,000+</div>
-                <div style="font-size:12px; color:#536B88; font-weight:600; text-transform:uppercase;">Patients Healed</div>
+                <div class="hero-stat-label" style="font-size:12px; color:#536B88; font-weight:600; text-transform:uppercase;">Patients Healed</div>
               </div>
               <div>
                 <div data-counter="99" data-suffix="%" style="font-family:'Recoleta',Georgia,serif; font-size:26px; font-weight:700; color:#233E85; line-height:1.1;">99%</div>
-                <div style="font-size:12px; color:#536B88; font-weight:600; text-transform:uppercase;">Practo Score</div>
+                <div class="hero-stat-label" style="font-size:12px; color:#536B88; font-weight:600; text-transform:uppercase;">Practo Score</div>
               </div>
             </div>
           </div>
 
           <div style="position:relative;">
             <div class="photo-card reveal-blur" style="">
-              <img src="assets/images/dr_prabhu_rajan_profile.jpg" alt="Dr. Prabhu Rajan, PT" style="width:100%; height:440px; object-fit:cover; display:block;" loading="eager"/>
+              <img src="assets/images/dr_prabhu_rajan_profile.jpg" alt="Dr. Prabhu Rajan, PT" class="hero-doctor-img" loading="eager"/>
             </div>
             
-            <div class="reveal-blur" style="position:absolute; bottom:20px; left:20px; right:20px; background:rgba(255,255,255,0.95); backdrop-filter:blur(8px); border-radius:14px; padding:16px 20px;  border:1px solid #EEF2F4;">
+            <div class="reveal-blur hero-doctor-badge" style="position:absolute; bottom:20px; left:20px; right:20px; background:rgba(255,255,255,0.95); backdrop-filter:blur(8px); border-radius:14px; padding:16px 20px;  border:1px solid #EEF2F4;">
               <div style="display:flex; justify-content:space-between; align-items:center;">
                 <div>
                   <div style="font-family:'Recoleta',Georgia,serif; font-size:18px; font-weight:700; color:#233E85; line-height:1.2;">Dr. Prabhu Rajan, PT</div>
@@ -623,7 +623,7 @@ def build_core_pages():
           <span style="color:#233E85; font-weight:700;">About Dr. Prabhu Rajan &amp; Clinic</span>
         </div>
 
-        <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap:48px; align-items:center;">
+        <div class="hero-grid">
           <div>
             <div class="clinic-badge">
               {SVG_AWARD} Founder &amp; Chief Physiotherapist

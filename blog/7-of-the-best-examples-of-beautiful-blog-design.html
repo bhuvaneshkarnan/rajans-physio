@@ -25,8 +25,8 @@
           </div>
         </a>
 
-        <!-- NAV LINKS -->
-        <nav role="navigation" class="nav-menu w-nav-menu" style="display:flex; align-items:center;">
+        <!-- NAV LINKS (Cleanly controlled via CSS for Desktop & Mobile) -->
+        <nav role="navigation" class="nav-menu w-nav-menu">
           <a href="../" class="nav__link w-nav-link ">Home</a>
           <a href="../about.html" class="nav__link w-nav-link ">About Us</a>
           
@@ -53,13 +53,18 @@
           <a href="../faq.html" class="nav__link w-nav-link ">FAQ</a>
           <a href="../free-assessment.html" class="nav__link w-nav-link ">Pain Checker</a>
           <a href="../contact.html" class="nav__link w-nav-link ">Contact</a>
-          <a href="tel:9042612895" class="button w-button nav-btn" style="margin-left:12px; background:#233E85; color:#FFFFFF; padding:9px 18px; font-size:13.5px; display:inline-flex; align-items:center; gap:8px;">
+          <a href="tel:9042612895" class="button w-button nav-btn" style="background:#233E85; color:#FFFFFF; padding:9px 18px; font-size:13.5px; display:inline-flex; align-items:center; gap:8px;">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> <span>90426 12895</span>
           </a>
         </nav>
 
-        <div class="menu-button w-nav-button">
-          <div class="icon w-icon-nav-menu"></div>
+        <!-- HAMBURGER BUTTON -->
+        <div class="menu-button w-nav-button" aria-label="Toggle navigation" role="button" tabindex="0">
+          <svg class="hamburger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#233E85" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:block; flex-shrink:0;">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
         </div>
       </div>
     </div>
@@ -73,6 +78,7 @@ Saepe laboriosam ipsum velit et magnam.
 Et impedit aut inventore numquam recusandae.
 Qui sed praesentium assumenda.
 Itaque velit dolor atque fugiat fugit occaecati ex.</p></div></article></div></div></div></div></section><section class="section section--small"><div class="container overflow w-container"><div class="banner2 mt-0"><img alt="" class="columns__graph columns__graph--waves waves2" loading="lazy" src="../assets/images/6475b366ed49970529d05c98_Illustration.svg"/><p class="banner__text--2 recoleta">Ready to get started?</p><p class="_w-530 mb-2 mb-1-5">Take our evidence-based online assesment. It’s fast, actionable, and supported by real physicians.</p><a class="button button--secondary w-button" href="/free-assessment">Start With A Free Assessment</a><p class="banner__caption">Stop the endless online searching and self diagnosing.</p></div></div></section></aside>
+  <!-- STREAMLINED CLINICAL FOOTER (OPTIMIZED, BALANCED & FLAT) -->
   <!-- STREAMLINED CLINICAL FOOTER (OPTIMIZED, BALANCED & FLAT) -->
   <footer class="footer" style="padding:56px 0 24px 0; background:#FFFFFF; border-top:1px solid #DCE5F5;">
     <div class="container w-container">

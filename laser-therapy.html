@@ -25,8 +25,8 @@
           </div>
         </a>
 
-        <!-- NAV LINKS -->
-        <nav role="navigation" class="nav-menu w-nav-menu" style="display:flex; align-items:center;">
+        <!-- NAV LINKS (Cleanly controlled via CSS for Desktop & Mobile) -->
+        <nav role="navigation" class="nav-menu w-nav-menu">
           <a href="./" class="nav__link w-nav-link ">Home</a>
           <a href="about.html" class="nav__link w-nav-link ">About Us</a>
           
@@ -53,13 +53,18 @@
           <a href="faq.html" class="nav__link w-nav-link ">FAQ</a>
           <a href="free-assessment.html" class="nav__link w-nav-link ">Pain Checker</a>
           <a href="contact.html" class="nav__link w-nav-link ">Contact</a>
-          <a href="tel:9042612895" class="button w-button nav-btn" style="margin-left:12px; background:#233E85; color:#FFFFFF; padding:9px 18px; font-size:13.5px; display:inline-flex; align-items:center; gap:8px;">
+          <a href="tel:9042612895" class="button w-button nav-btn" style="background:#233E85; color:#FFFFFF; padding:9px 18px; font-size:13.5px; display:inline-flex; align-items:center; gap:8px;">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> <span>90426 12895</span>
           </a>
         </nav>
 
-        <div class="menu-button w-nav-button">
-          <div class="icon w-icon-nav-menu"></div>
+        <!-- HAMBURGER BUTTON -->
+        <div class="menu-button w-nav-button" aria-label="Toggle navigation" role="button" tabindex="0">
+          <svg class="hamburger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#233E85" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:block; flex-shrink:0;">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
         </div>
       </div>
     </div>
@@ -78,7 +83,7 @@
           <span style="color:#233E85; font-weight:700;">Laser Therapy</span>
         </div>
 
-        <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap:48px; align-items:center;">
+        <div class="hero-grid">
           <div>
             <div class="clinic-badge">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#233E85" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg> LASERSTIM Scanning Console &bull; Deep Tissue Healing

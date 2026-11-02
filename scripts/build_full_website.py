@@ -71,8 +71,8 @@ def get_global_nav(depth_prefix, active_item):
           </div>
         </a>
 
-        <!-- NAV LINKS -->
-        <nav role="navigation" class="nav-menu w-nav-menu" style="display:flex; align-items:center;">
+        <!-- NAV LINKS (Cleanly controlled via CSS for Desktop & Mobile) -->
+        <nav role="navigation" class="nav-menu w-nav-menu">
           <a href="{home_link}" class="nav__link w-nav-link {home_act}">Home</a>
           <a href="{depth_prefix}about.html" class="nav__link w-nav-link {about_act}">About Us</a>
           
@@ -99,13 +99,18 @@ def get_global_nav(depth_prefix, active_item):
           <a href="{depth_prefix}faq.html" class="nav__link w-nav-link {faq_act}">FAQ</a>
           <a href="{depth_prefix}free-assessment.html" class="nav__link w-nav-link {checker_act}">Pain Checker</a>
           <a href="{depth_prefix}contact.html" class="nav__link w-nav-link {contact_act}">Contact</a>
-          <a href="tel:9042612895" class="button w-button nav-btn" style="margin-left:12px; background:#233E85; color:#FFFFFF; padding:9px 18px; font-size:13.5px; display:inline-flex; align-items:center; gap:8px;">
+          <a href="tel:9042612895" class="button w-button nav-btn" style="background:#233E85; color:#FFFFFF; padding:9px 18px; font-size:13.5px; display:inline-flex; align-items:center; gap:8px;">
             {SVG_PHONE} <span>90426 12895</span>
           </a>
         </nav>
 
-        <div class="menu-button w-nav-button">
-          <div class="icon w-icon-nav-menu"></div>
+        <!-- HAMBURGER BUTTON -->
+        <div class="menu-button w-nav-button" aria-label="Toggle navigation" role="button" tabindex="0">
+          <svg class="hamburger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#233E85" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:block; flex-shrink:0;">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
         </div>
       </div>
     </div>
