@@ -439,7 +439,7 @@ def render_service_page(service, depth_prefix):
       <div class="container w-container">
         <div style="max-width:760px; margin:0 auto 48px auto; text-align:center;">
           <div class="section-kicker">{service["kicker"]}</div>
-          <h2 style="font-family:'Recoleta',Georgia,serif; font-size:clamp(26px, 3.2vw, 36px); line-height:1.22 !important; color:#233E85 !important; margin-bottom:14px;">
+          <h2 style="font-family:'Recoleta',Georgia,serif; font-size:clamp(30px, 3.8vw, 44px); line-height:1.2 !important; color:#233E85 !important; margin-bottom:16px;">
             {service["why_title"]}
           </h2>
           <p style="font-size:15.5px; line-height:1.65 !important; color:#4A5568 !important; margin:0;">
@@ -458,7 +458,7 @@ def render_service_page(service, depth_prefix):
       <div class="container w-container">
         <div style="text-align:center; max-width:720px; margin:0 auto 48px auto;">
           <div class="section-kicker">TARGETED CLINICAL RELIEF</div>
-          <h2 style="font-family:'Recoleta',Georgia,serif; font-size:clamp(26px, 3.2vw, 36px); line-height:1.22 !important; color:#233E85 !important; margin-bottom:14px;">
+          <h2 style="font-family:'Recoleta',Georgia,serif; font-size:clamp(30px, 3.8vw, 44px); line-height:1.2 !important; color:#233E85 !important; margin-bottom:16px;">
             Conditions effectively resolved at our clinic.
           </h2>
           <p style="font-size:15.5px; line-height:1.6 !important; color:#4A5568 !important; margin:0;">
@@ -513,7 +513,7 @@ def render_service_page(service, depth_prefix):
       <div class="container w-container" style="max-width:820px;">
         <div style="text-align:center; margin-bottom:36px;">
           <div class="section-kicker">COMMON QUESTIONS</div>
-          <h2 style="font-family:'Recoleta',Georgia,serif; font-size:clamp(24px, 3vw, 34px); line-height:1.22 !important; color:#233E85 !important; margin:0;">
+          <h2 style="font-family:'Recoleta',Georgia,serif; font-size:clamp(28px, 3.5vw, 40px); line-height:1.2 !important; color:#233E85 !important; margin:0;">
             Frequently Asked Questions
           </h2>
         </div>
@@ -648,7 +648,7 @@ def render_contact_page(depth_prefix):
           <!-- FORM -->
           <div>
             <div class="section-kicker">APPOINTMENT REQUEST</div>
-            <h2 style="font-family:'Recoleta',Georgia,serif; font-size:26px; line-height:1.24 !important; color:#233E85 !important; margin-bottom:12px;">
+            <h2 style="font-family:'Recoleta',Georgia,serif; font-size:clamp(28px, 3.5vw, 40px); line-height:1.2 !important; color:#233E85 !important; margin-bottom:14px;">
               Request a Consultation
             </h2>
             <p style="font-size:14.5px; line-height:1.6 !important; color:#4A5568 !important; margin-bottom:20px;">

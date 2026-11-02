@@ -205,7 +205,7 @@ def get_cta_section(depth_prefix):
         <div style="display:inline-flex; align-items:center; gap:8px; background:rgba(237,29,127,0.2); color:#FFFFFF; border:1px solid rgba(237,29,127,0.45); padding:6px 16px; border-radius:30px; font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:1px; margin-bottom:16px;">
           {SVG_SHIELD} 17 Years of Clinical Excellence in Chennai
         </div>
-        <h2 style="font-family:'Recoleta',Georgia,serif; font-size:clamp(24px, 3.2vw, 36px); line-height:1.22 !important; color:#FFFFFF !important; margin-bottom:14px;">
+        <h2 style="font-family:'Recoleta',Georgia,serif; font-size:clamp(28px, 3.6vw, 42px); line-height:1.2 !important; color:#FFFFFF !important; margin-bottom:14px;">
           Take the first step toward lasting, root-cause pain relief.
         </h2>
         <p style="font-size:15.5px; line-height:1.6 !important; color:#EEF3FA !important; margin-bottom:28px; max-width:640px; margin-left:auto; margin-right:auto;">

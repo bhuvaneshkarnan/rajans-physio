@@ -103,7 +103,7 @@ def render_homepage():
       <div class="container w-container">
         <div style="text-align:center; max-width:720px; margin:0 auto 48px auto;">
           <div class="section-kicker">CONDITIONS WE TREAT</div>
-          <h2 class="heading-2" style="font-size:clamp(26px, 3.2vw, 36px); line-height:1.22 !important; margin:0 0 14px 0;">
+          <h2 class="heading-2" style="font-size:clamp(30px, 3.8vw, 44px); line-height:1.2 !important; margin:0 0 16px 0;">
             Targeted relief for <span class="highlight highlight--line" style="display:inline; line-height:inherit;">complex conditions.</span>
           </h2>
           <p class="section-subtitle">
@@ -204,7 +204,7 @@ def render_homepage():
       <div class="container w-container">
         <div style="text-align:center; max-width:720px; margin:0 auto 48px auto;">
           <div class="section-kicker">TREATMENT MODALITIES</div>
-          <h2 class="heading-2" style="font-size:clamp(26px, 3.2vw, 36px); line-height:1.22 !important; margin:0 0 14px 0;">
+          <h2 class="heading-2" style="font-size:clamp(30px, 3.8vw, 44px); line-height:1.2 !important; margin:0 0 16px 0;">
             Evidence-informed therapies for <span class="highlight highlight--line" style="display:inline; line-height:inherit;">rapid healing.</span>
           </h2>
           <p class="section-subtitle">
@@ -341,7 +341,7 @@ def render_homepage():
       <div class="container w-container">
         <div style="text-align:center; max-width:680px; margin:0 auto 48px auto;">
           <div class="section-kicker">OUR CLINICAL PROTOCOL</div>
-          <h2 class="heading-2" style="font-size:clamp(26px, 3.4vw, 38px); line-height:1.22 !important; margin-bottom:14px;">
+          <h2 class="heading-2" style="font-size:clamp(30px, 3.8vw, 44px); line-height:1.2 !important; margin-bottom:16px;">
             Say goodbye to pain.<br/>Only <span class="highlight highlight--yellow-line">4 steps</span> to active recovery.
           </h2>
           <p class="section-subtitle">
@@ -392,7 +392,7 @@ def render_homepage():
       <div class="container w-container">
         <div style="text-align:center; max-width:760px; margin:0 auto 42px auto;">
           <div class="section-kicker">THE RAJAN'S DIFFERENCE</div>
-          <h2 class="heading-2" style="font-size:clamp(26px, 3.2vw, 36px); line-height:1.22 !important; margin:0 0 14px 0;">
+          <h2 class="heading-2" style="font-size:clamp(30px, 3.8vw, 44px); line-height:1.2 !important; margin:0 0 16px 0;">
             Root-cause healing vs. <span class="highlight highlight--line" style="display:inline; line-height:inherit;">temporary masking.</span>
           </h2>
           <p class="section-subtitle">
@@ -455,33 +455,36 @@ def render_homepage():
     <!-- SECTION 4: HOME PHYSIOTHERAPY VISITS PROGRAM -->
     <section class="section" style="background:#FFFFFF; padding:72px 0;">
       <div class="container w-container">
-        <div class="reveal-blur" style="background:#FAF6EE; border-radius:24px; padding:44px; display:grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap:36px; align-items:center; border:1px solid #EEF2F4;">
+        <div class="doorstep-card reveal-blur">
           <div>
             <div class="section-kicker">IN-HOME REHABILITATION</div>
-            <h3 class="heading-3" style="font-size:clamp(24px, 3vw, 34px); line-height:1.24 !important; color:#233E85 !important; margin:10px 0 14px 0;">
+            <h2 class="heading-2" style="font-size:clamp(28px, 3.6vw, 42px); line-height:1.2 !important; color:#233E85 !important; margin:0 0 16px 0;">
               Expert physiotherapy delivered directly to your doorstep.
-            </h3>
-            <p style="font-size:15px; line-height:1.65 !important; color:#4A5568 !important; margin-bottom:20px;">
+            </h2>
+            <p style="font-size:15.5px; line-height:1.65 !important; color:#4A5568 !important; margin-bottom:22px;">
               For post-surgical patients, elderly family members, stroke survivors, or acute bedridden cases unable to travel to our clinic. Our visiting therapists bring portable ultrasound, electrotherapy, and exercises directly to your bedside.
             </p>
-            <div style="display:flex; flex-wrap:wrap; gap:12px; margin-bottom:24px; font-size:13px; font-weight:600; color:#233E85;">
-              <span>&bull; Chromepet</span>
-              <span>&bull; Pallavaram</span>
-              <span>&bull; Tambaram</span>
-              <span>&bull; Chitlapakkam</span>
-              <span>&bull; Hasthinapuram</span>
+            <div class="doorstep-locations">
+              <div class="doorstep-loc-item">{SVG_CHECK} <span>Chromepet</span></div>
+              <div class="doorstep-loc-item">{SVG_CHECK} <span>Pallavaram</span></div>
+              <div class="doorstep-loc-item">{SVG_CHECK} <span>Tambaram</span></div>
+              <div class="doorstep-loc-item">{SVG_CHECK} <span>Chitlapakkam</span></div>
+              <div class="doorstep-loc-item">{SVG_CHECK} <span>Hasthinapuram</span></div>
+              <div class="doorstep-loc-item">{SVG_CHECK} <span>Radha Nagar</span></div>
             </div>
-            <a href="home-physiotherapy.html" class="btn-primary">
-              Learn About Home Visits &rarr;
+            <a href="home-physiotherapy.html" class="btn-primary" style="display:inline-flex; align-items:center; gap:8px;">
+              <span>Learn About Home Visits</span>
+              {SVG_ARROW_RIGHT}
             </a>
           </div>
 
           <div>
-            <div class="photo-card">
-              <img src="assets/images/clinic_entrance.jpg" alt="Home Visit Care Program" style="width:100%; height:320px; object-fit:cover; display:block;"/>
+            <div class="photo-card" style="border-radius:18px; overflow:hidden; border:1px solid #EEF2F4; background:#FFFFFF;">
+              <img src="assets/images/clinic_entrance.jpg" alt="Home Visit Care Program" class="doorstep-img"/>
               <div style="padding:16px 20px; background:#FFFFFF;">
-                <p style="font-size:13px; color:#536B88; margin:0;">
-                  <strong>Doorstep Clinical Care:</strong> Personalized home rehabilitation across South Chennai.
+                <div style="font-size:14px; font-weight:700; color:#233E85; margin-bottom:4px;">Direct Residence Coverage</div>
+                <p style="font-size:12.5px; color:#536B88; margin:0; line-height:1.5;">
+                  Serving Chromepet, Pallavaram, Tambaram &amp; nearby South Chennai neighborhoods.
                 </p>
               </div>
             </div>
@@ -495,7 +498,7 @@ def render_homepage():
       <div class="container w-container">
         <div style="text-align:center; max-width:720px; margin:0 auto 42px auto;">
           <div class="section-kicker">OUR CLINICAL FACILITY</div>
-          <h2 class="heading-2" style="font-size:clamp(26px, 3.2vw, 36px); line-height:1.22 !important; margin:0 0 14px 0;">
+          <h2 class="heading-2" style="font-size:clamp(30px, 3.8vw, 44px); line-height:1.2 !important; margin:0 0 16px 0;">
             Take a look inside our <span class="highlight highlight--line" style="display:inline; line-height:inherit;">healing center.</span>
           </h2>
           <p class="section-subtitle">
@@ -537,7 +540,7 @@ def render_homepage():
           <div style="display:inline-flex; align-items:center; gap:6px; color:#FEFCBF; margin-bottom:10px;">
             {SVG_STAR}{SVG_STAR}{SVG_STAR}{SVG_STAR}{SVG_STAR}
           </div>
-          <h2 class="heading-2" style="color:#FBF5E9 !important; font-size:clamp(26px, 3.2vw, 36px); line-height:1.22 !important; margin:0 0 14px 0;">
+          <h2 class="heading-2" style="color:#FBF5E9 !important; font-size:clamp(30px, 3.8vw, 44px); line-height:1.2 !important; margin:0 0 16px 0;">
             What our patients say
           </h2>
           <p style="font-size:15.5px; line-height:1.6 !important; color:#EEF3FA !important; margin:0;">
@@ -670,7 +673,7 @@ def build_core_pages():
       <div class="container w-container">
         <div style="text-align:center; max-width:720px; margin:0 auto 48px auto;">
           <div class="section-kicker">CLINICAL EXCELLENCE</div>
-          <h2 class="heading-2" style="font-size:clamp(26px, 3.2vw, 36px); line-height:1.22 !important; margin:0 0 14px 0;">
+          <h2 class="heading-2" style="font-size:clamp(30px, 3.8vw, 44px); line-height:1.2 !important; margin:0 0 16px 0;">
             Qualifications, Honors &amp; Leadership
           </h2>
           <p class="section-subtitle">
