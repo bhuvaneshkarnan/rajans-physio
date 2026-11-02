@@ -36,7 +36,7 @@ def render_homepage():
             <div class="clinic-badge">
               {SVG_SHIELD} 17 Years of Clinical Excellence &bull; Est. 2009
             </div>
-            <h1 class="heading-1" style="font-size:clamp(32px, 4vw, 46px); line-height:1.18 !important; margin-bottom:16px;">
+            <h1 class="heading-1 hero-title" style="font-size:clamp(36px, 4.8vw, 54px); line-height:1.14 !important; font-weight:800 !important; margin-bottom:18px;">
               Pain-free living starts <span class="highlight highlight--line" style="display:inline; line-height:inherit;">here.</span>
             </h1>
             <p class="text-lead" style="margin-bottom:24px;">

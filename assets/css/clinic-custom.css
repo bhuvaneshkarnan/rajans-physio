@@ -1,4 +1,79 @@
 /* ========================================================
+   OFFICIAL BRAND TYPOGRAPHY & TRUE BOLD FONT FAMILIES
+   ======================================================== */
+@font-face {
+  font-family: 'Recoleta';
+  src: url('../fonts/Recoleta.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Recoleta';
+  src: url('../fonts/Recoleta-Bold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Recoleta';
+  src: url('../fonts/Recoleta-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Recoleta';
+  src: url('../fonts/Recoleta-Bold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/WorkSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('../fonts/WorkSans-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('../fonts/WorkSans-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('../fonts/WorkSans-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url('../fonts/WorkSans-Bold.ttf') format('truetype');
+}
+
+/* ========================================================
    GLOBAL STRICT NO-SHADOW POLICY (CLEAN MODERN FLAT DESIGN)
    ======================================================== */
 *, *::before, *::after,
@@ -39,15 +114,17 @@ html, body {
 }
 
 /* 2. Consistent Headings Hierarchy & Tight Line Heights */
-h1, .heading-1 {
+h1, .heading-1, .hero-title {
   font-family: 'Recoleta', Georgia, serif !important;
-  font-size: clamp(34px, 4.4vw, 50px) !important;
-  line-height: 1.15 !important;
-  font-weight: 700 !important;
+  font-size: clamp(36px, 4.8vw, 54px) !important;
+  line-height: 1.14 !important;
+  font-weight: 800 !important;
   color: #233E85;
   margin-top: 0 !important;
-  margin-bottom: 16px !important;
+  margin-bottom: 18px !important;
   letter-spacing: -0.02em;
+  font-synthesis: weight style !important;
+  -webkit-font-synthesis: weight style !important;
 }
 
 h2, .heading-2, .section-title {
@@ -84,17 +161,19 @@ h4, .heading-4 {
 /* 3. Clean, Legible Paragraphs */
 p, .text, .body-text {
   font-family: 'Work Sans', -apple-system, BlinkMacSystemFont, sans-serif !important;
-  font-size: 15px !important;
-  line-height: 1.62 !important;
-  color: #4A5568;
+  font-size: 15.5px !important;
+  line-height: 1.65 !important;
+  color: #2D3748 !important; /* Richer, crisper contrast on mobile retina */
+  font-weight: 450 !important;
   margin-top: 0;
   margin-bottom: 14px;
 }
 
 .text-lead {
-  font-size: 16.5px !important;
+  font-size: 17px !important;
   line-height: 1.65 !important;
-  color: #374151;
+  color: #1A202C !important;
+  font-weight: 500 !important;
 }
 
 .text-muted {
@@ -901,30 +980,40 @@ p, .text, .body-text {
     gap: 10px !important;
   }
 
-  /* Typography Hierarchy */
-  h1, .heading-1 {
-    font-size: clamp(24px, 6.2vw, 32px) !important;
-    line-height: 1.2 !important;
-    margin-bottom: 12px !important;
+  /* Typography Hierarchy (Larger, Bolder & High Contrast on Mobile) */
+  h1, .heading-1, .hero-title {
+    font-size: clamp(34px, 8.8vw, 44px) !important;
+    line-height: 1.15 !important;
+    font-weight: 800 !important;
+    margin-bottom: 16px !important;
+    letter-spacing: -0.02em !important;
   }
   h2, .heading-2, .section-title {
-    font-size: clamp(26px, 7vw, 34px) !important;
-    line-height: 1.22 !important;
+    font-size: clamp(28px, 7.2vw, 36px) !important;
+    line-height: 1.2 !important;
+    font-weight: 700 !important;
     margin-bottom: 14px !important;
+    letter-spacing: -0.015em !important;
   }
   h3, .heading-3 {
-    font-size: 18px !important;
+    font-size: 20px !important;
     line-height: 1.26 !important;
-    margin-bottom: 8px !important;
+    font-weight: 700 !important;
+    margin-bottom: 10px !important;
   }
   p, .text, .body-text {
-    font-size: 14.5px !important;
-    line-height: 1.58 !important;
-    margin-bottom: 12px !important;
+    font-size: 15px !important;
+    line-height: 1.62 !important;
+    color: #2D3748 !important;
+    font-weight: 450 !important;
+    margin-bottom: 14px !important;
   }
   .text-lead {
-    font-size: 15.5px !important;
-    line-height: 1.6 !important;
+    font-size: 16.5px !important;
+    line-height: 1.62 !important;
+    color: #1A202C !important;
+    font-weight: 500 !important;
+    margin-bottom: 22px !important;
   }
 
   /* Brand Header */

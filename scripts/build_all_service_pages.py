@@ -391,7 +391,7 @@ def render_service_page(service, depth_prefix):
             <div class="clinic-badge">
               {service["icon"]} {service["badge"]}
             </div>
-            <h1 style="font-family:'Recoleta',Georgia,serif; font-size:clamp(30px, 3.8vw, 44px); line-height:1.18 !important; color:#233E85 !important; margin-bottom:16px;">
+            <h1 class="heading-1 hero-title" style="font-family:'Recoleta',Georgia,serif; font-size:clamp(34px, 4.4vw, 50px); line-height:1.16 !important; font-weight:800 !important; color:#233E85 !important; margin-bottom:18px;">
               {service["h1"]}
             </h1>
             <p style="font-size:16px; line-height:1.65 !important; color:#4A5568 !important; margin-bottom:24px;">
