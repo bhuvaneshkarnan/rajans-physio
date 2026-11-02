@@ -768,30 +768,80 @@ p, .text, .body-text {
     align-items: center !important;
   }
 
-  /* Hamburger Button */
+  
+  /* ========================================================
+     CLEAN & MINIMALIST HAMBURGER BUTTON (ZERO BOX, SLEEK LINES)
+     ======================================================== */
   .menu-button,
   .w-nav-button {
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-    width: 42px !important;
-    height: 42px !important;
+    width: 40px !important;
+    height: 40px !important;
     padding: 0 !important;
-    background: #EEF3FA !important;
-    border-radius: 10px !important;
+    margin: 0 !important;
+    background: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    border-radius: 8px !important;
     cursor: pointer !important;
     z-index: 10001 !important;
-    border: 1px solid #DCE5F5 !important;
-    transition: background-color 0.2s ease, transform 0.15s ease !important;
+    transition: background-color 0.2s ease, opacity 0.2s ease, transform 0.15s ease !important;
     -webkit-tap-highlight-color: transparent !important;
   }
+
+  .menu-button:hover,
+  .w-nav-button:hover,
+  .menu-button:active,
+  .w-nav-button:active {
+    background: rgba(35, 62, 133, 0.06) !important;
+    background-color: rgba(35, 62, 133, 0.06) !important;
+  }
+
   .menu-button.open,
   .w-nav-button.w--open {
-    background: #233E85 !important;
+    background: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
   }
-  .menu-button.open svg,
-  .w-nav-button.w--open svg {
-    stroke: #FFFFFF !important;
+
+  /* Sleek, Minimalist SVG Hamburger Lines */
+  .hamburger-icon {
+    display: block !important;
+    width: 24px !important;
+    height: 24px !important;
+    overflow: visible !important;
+  }
+
+  .hamburger-icon line {
+    stroke: #233E85 !important;
+    stroke-width: 1.8 !important;
+    stroke-linecap: round !important;
+    transition: transform 0.26s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s ease, stroke 0.2s ease !important;
+    transform-origin: 12px 12px !important;
+  }
+
+  /* Smooth Transform to Clean Minimal 'X' on Open */
+  .menu-button.open .hamburger-icon line:nth-child(1),
+  .w-nav-button.w--open .hamburger-icon line:nth-child(1) {
+    transform: translateY(5px) rotate(45deg) !important;
+    stroke: #233E85 !important;
+  }
+
+  .menu-button.open .hamburger-icon line:nth-child(2),
+  .w-nav-button.w--open .hamburger-icon line:nth-child(2) {
+    opacity: 0 !important;
+    transform: scaleX(0) !important;
+  }
+
+  .menu-button.open .hamburger-icon line:nth-child(3),
+  .w-nav-button.w--open .hamburger-icon line:nth-child(3) {
+    transform: translateY(-5px) rotate(-45deg) !important;
+    stroke: #233E85 !important;
   }
 
   /* Mobile Slide-down Navigation Drawer (Hidden by Default) */
