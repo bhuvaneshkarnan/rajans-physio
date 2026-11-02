@@ -1,0 +1,851 @@
+/* ========================================================
+   GLOBAL STRICT NO-SHADOW POLICY (CLEAN MODERN FLAT DESIGN)
+   ======================================================== */
+*, *::before, *::after,
+button, .button, .w-button, .btn-primary, .btn-secondary, .btn-whatsapp, .btn-magenta, .btn-accent,
+.service-card, .bento-card, .photo-card, .testimonial-card, .vs-card,
+.faq-item, .navbar, .navbar.scrolled, #back-to-top, #floating-whatsapp, .w-dropdown-list,
+input, textarea, select, .hero-doctor-badge {
+  box-shadow: none !important;
+  text-shadow: none !important;
+}
+
+/* ========================================================
+   RAJAN'S PHYSIOTHERAPY & PAIN RELIEF CENTRE
+   OFFICIAL BRAND DESIGN SYSTEM (EXTRACTED FROM CLINIC LOGO)
+   Primary Royal Navy: #233E85 | Dark Navy: #172A5C
+   Primary Vibrant Magenta: #ED1D7F | Dark Magenta: #D8136F
+   Warm Organic Underline: #FACD71
+   Ice Navy Tint: #EEF3FA | Blush Magenta Tint: #FDF2F7
+   Accent Border Magenta: #FCE7F1 | Accent Border Navy: #DCE5F5
+   WhatsApp Green: #25D366 | WhatsApp Hover: #1EBE5D
+   ======================================================== */
+
+/* 1. Global Reset & Smoothing */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "liga" 1, "kern" 1;
+  color: #233E85;
+  background-color: #FAF9F6;
+  font-family: 'Work Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* 2. Consistent Headings Hierarchy & Tight Line Heights */
+h1, .heading-1 {
+  font-family: 'Recoleta', Georgia, serif !important;
+  font-size: clamp(30px, 3.8vw, 44px) !important;
+  line-height: 1.18 !important;
+  font-weight: 700 !important;
+  color: #233E85;
+  margin-top: 0 !important;
+  margin-bottom: 16px !important;
+  letter-spacing: -0.02em;
+}
+
+h2, .heading-2 {
+  font-family: 'Recoleta', Georgia, serif !important;
+  font-size: clamp(24px, 3vw, 34px) !important;
+  line-height: 1.22 !important;
+  font-weight: 700 !important;
+  color: #233E85;
+  margin-top: 0 !important;
+  margin-bottom: 14px !important;
+  letter-spacing: -0.015em;
+}
+
+h3, .heading-3 {
+  font-family: 'Recoleta', Georgia, serif !important;
+  font-size: clamp(18px, 2.2vw, 22px) !important;
+  line-height: 1.26 !important;
+  font-weight: 700 !important;
+  color: #233E85;
+  margin-top: 0 !important;
+  margin-bottom: 10px !important;
+}
+
+h4, .heading-4 {
+  font-family: 'Recoleta', Georgia, serif !important;
+  font-size: 18px !important;
+  line-height: 1.3 !important;
+  font-weight: 700 !important;
+  color: #233E85;
+  margin-top: 0 !important;
+  margin-bottom: 8px !important;
+}
+
+/* 3. Clean, Legible Paragraphs */
+p, .text, .body-text {
+  font-family: 'Work Sans', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 15px !important;
+  line-height: 1.62 !important;
+  color: #4A5568;
+  margin-top: 0;
+  margin-bottom: 14px;
+}
+
+.text-lead {
+  font-size: 16.5px !important;
+  line-height: 1.65 !important;
+  color: #374151;
+}
+
+.text-muted {
+  color: #64748B;
+  font-size: 13.5px !important;
+  line-height: 1.55 !important;
+}
+
+/* Contrast overrides for dark navy sections and cards */
+[style*="background:#233E85"] p,
+[style*="background: #233E85"] p,
+[style*="background:#233E85"] li,
+[style*="background: #233E85"] li,
+[style*="background:#172A5C"] p,
+[style*="background: #172A5C"] p,
+[style*="background:#172A5C"] li,
+[style*="background: #172A5C"] li {
+  color: #FFFFFF !important;
+}
+
+/* High-contrast, crystal-clear Testimonials */
+.testimonial-card {
+  background: rgba(255, 255, 255, 0.12) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 18px !important;
+  padding: 28px !important;
+  border: 1px solid rgba(255, 255, 255, 0.24) !important;
+  box-shadow: none !important;
+  transition: transform 0.35s ease, background 0.35s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.18) !important;
+  border-color: rgba(255, 255, 255, 0.4) !important;
+  box-shadow: none !important;
+}
+
+.testimonial-quote {
+  color: #FFFFFF !important;
+  font-size: 15px !important;
+  line-height: 1.7 !important;
+  font-style: italic;
+  margin-bottom: 20px !important;
+  text-shadow: none !important;
+  font-weight: 400;
+}
+
+.testimonial-author {
+  color: #FFFFFF !important;
+  font-weight: 700 !important;
+  font-size: 14.5px !important;
+  letter-spacing: 0.3px;
+  text-shadow: none !important;
+}
+
+.testimonial-meta {
+  color: #DCE5F5 !important;
+  font-size: 12.5px !important;
+  opacity: 0.95;
+  text-shadow: none !important;
+}
+
+/* 4. Organic Hand-Drawn Heading Underline (Exact Reference Match, Zero Disruption) */
+.highlight,
+.highlight.highlight--line,
+.highlight.highlight--yellow-line,
+.highlight-underline {
+  position: relative !important;
+  display: inline !important;
+  white-space: nowrap !important;
+  background: none !important;
+  line-height: inherit !important;
+  padding-bottom: 0 !important;
+}
+
+.highlight::after,
+.highlight.highlight--line::after,
+.highlight.highlight--yellow-line::after,
+.highlight-underline::after {
+  content: "" !important;
+  position: absolute !important;
+  left: 0 !important;
+  bottom: -3px !important;
+  width: 100% !important;
+  height: 8px !important;
+  background-image: url('../images/6475b366ed49970529d05c7b_yellow-line.svg') !important;
+  background-repeat: no-repeat !important;
+  background-position: center bottom !important;
+  background-size: 100% 100% !important;
+  pointer-events: none !important;
+  z-index: 0 !important;
+}
+
+/* 5. Clean, Consistent Section Spacings Scale */
+.section {
+  padding: 68px 0 !important;
+  position: relative;
+}
+
+.section--sm {
+  padding: 44px 0 !important;
+}
+
+.section--hero {
+  padding: 56px 0 68px 0 !important;
+}
+
+.section-kicker {
+  font-family: 'Work Sans', sans-serif !important;
+  font-size: 11.5px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1.5px !important;
+  color: #ED1D7F !important;
+  margin-bottom: 10px !important;
+  display: inline-block !important;
+}
+
+.section-subtitle {
+  font-size: 15.5px !important;
+  line-height: 1.6 !important;
+  color: #4A5568 !important;
+  max-width: 660px;
+  margin: 0 auto;
+}
+
+/* 6. Clean Cards & Containers */
+.service-card {
+  background: #FFFFFF;
+  border-radius: 18px;
+  padding: 26px;
+  box-shadow: none !important;
+  border: 1px solid #EEF2F4;
+  transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1), border-color 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: none !important;
+  border-color: #233E85;
+}
+
+.bento-card {
+  background: #FFFFFF;
+  border-radius: 18px;
+  padding: 26px;
+  box-shadow: none !important;
+  border: 1px solid #EEF2F4;
+  transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1), border-color 0.25s ease;
+}
+
+.bento-card:hover {
+  transform: translateY(-5px);
+  box-shadow: none !important;
+  border-color: #233E85;
+}
+
+.photo-card {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: none !important;
+  background: #FFFFFF;
+  transition: transform 0.3s ease;
+}
+
+.photo-card:hover {
+  transform: translateY(-4px);
+}
+
+.clinic-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 16px;
+  border-radius: 30px;
+  font-size: 11.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  background: #FDF2F7;
+  color: #ED1D7F;
+  border: 1px solid #FCE7F1;
+  margin-bottom: 12px;
+}
+
+.clinic-badge-navy {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 16px;
+  border-radius: 30px;
+  font-size: 11.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  background: #EEF3FA;
+  color: #233E85;
+  border: 1px solid #DCE5F5;
+  margin-bottom: 12px;
+}
+
+/* 7. Dropdown Menu for Services */
+.w-dropdown {
+  display: inline-block;
+  position: relative;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.w-dropdown:hover .w-dropdown-list {
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
+  transform: translateY(0) !important;
+}
+
+.w-dropdown-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  background: #FFFFFF;
+  border-radius: 14px;
+  box-shadow: none !important;
+  padding: 8px 0;
+  border: 1px solid #DCE5F5;
+  min-width: 280px;
+  z-index: 1000;
+  transition: all 0.2s ease;
+  transform: translateY(8px);
+}
+
+.w-dropdown-link {
+  padding: 10px 20px !important;
+  font-size: 14px !important;
+  color: #233E85 !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  text-decoration: none !important;
+  font-weight: 500 !important;
+  transition: background 0.15s ease, color 0.15s ease !important;
+}
+
+.w-dropdown-link:hover {
+  background: #EEF3FA !important;
+  color: #ED1D7F !important;
+}
+
+/* 8. Buttons & Actions (STRICT FLAT DESIGN - ZERO SHADOWS) */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #233E85;
+  color: #FFFFFF !important;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  box-shadow: none !important;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #172A5C;
+  transform: translateY(-2px);
+  box-shadow: none !important;
+}
+
+.btn-magenta, .btn-accent {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #ED1D7F;
+  color: #FFFFFF !important;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  box-shadow: none !important;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-magenta:hover, .btn-accent:hover {
+  background-color: #D8136F;
+  transform: translateY(-2px);
+  box-shadow: none !important;
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: transparent;
+  color: #233E85 !important;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  border: 1.5px solid #233E85;
+  box-shadow: none !important;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background-color: #233E85;
+  color: #FFFFFF !important;
+  transform: translateY(-2px);
+}
+
+/* Official WhatsApp Button (STRICT ZERO SHADOWS) */
+.btn-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #25D366 !important;
+  color: #FFFFFF !important;
+  padding: 11px 22px;
+  border-radius: 30px;
+  font-size: 13.5px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.25s ease, background-color 0.2s ease;
+  box-shadow: none !important;
+  text-shadow: none !important;
+  border: none !important;
+  cursor: pointer;
+}
+
+.btn-whatsapp:hover {
+  background-color: #1EBE5D !important;
+  transform: translateY(-2px);
+  box-shadow: none !important;
+}
+
+/* Floating WhatsApp Button (Zero Shadows) */
+#floating-whatsapp {
+  position: fixed;
+  bottom: 26px;
+  left: 26px;
+  background-color: #25D366;
+  color: #FFFFFF;
+  padding: 11px 18px;
+  border-radius: 30px;
+  font-size: 13.5px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  z-index: 998;
+  text-decoration: none;
+  box-shadow: none !important;
+  text-shadow: none !important;
+  border: none;
+  transition: transform 0.25s ease, background-color 0.2s ease, opacity 0.3s ease;
+}
+
+#floating-whatsapp:hover {
+  background-color: #1EBE5D;
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: none !important;
+}
+
+/* 9. Step Indicators & Process Numbers */
+.process-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.process-num {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #EEF3FA;
+  color: #233E85;
+  border: 1.5px solid #DCE5F5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Recoleta', serif;
+  font-size: 20px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+/* 10. FAQ Accordions */
+.faq-item {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 14px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  transition: border-color 0.2s ease;
+}
+
+.faq-item:hover {
+  border-color: #233E85;
+}
+
+.faq-q {
+  padding: 18px 24px;
+  font-family: 'Recoleta', serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: #233E85;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+}
+
+.faq-a {
+  padding: 0 24px 18px 24px;
+  font-size: 14.5px;
+  line-height: 1.65;
+  color: #4A5568;
+}
+
+/* 11. Streamlined Footer Link Transitions */
+.footer-link {
+  color: #4A5568;
+  text-decoration: none;
+  transition: color 0.18s ease, transform 0.18s ease;
+  display: inline-block;
+}
+
+.footer-link:hover {
+  color: #ED1D7F;
+  transform: translateX(3px);
+}
+
+.boldlabs-credit {
+  color: #233E85;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.boldlabs-credit:hover {
+  color: #ED1D7F;
+  text-decoration: underline;
+}
+
+/* 12. Complete Mobile & Tablet Responsive Optimizations */
+@media (max-width: 991px) {
+  .section {
+    padding: 48px 0 !important;
+  }
+  .section--hero {
+    padding: 44px 0 52px 0 !important;
+  }
+  .footer__grid {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 36px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  /* Mobile Spacings & Typography */
+  .section {
+    padding: 38px 0 !important;
+  }
+  .section--hero {
+    padding: 36px 0 44px 0 !important;
+  }
+  .container {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+  h1, .heading-1 {
+    font-size: clamp(24px, 6.2vw, 32px) !important;
+    line-height: 1.2 !important;
+    margin-bottom: 12px !important;
+  }
+  h2, .heading-2 {
+    font-size: clamp(20px, 5.2vw, 26px) !important;
+    line-height: 1.22 !important;
+    margin-bottom: 12px !important;
+  }
+  h3, .heading-3 {
+    font-size: 18px !important;
+    line-height: 1.26 !important;
+    margin-bottom: 8px !important;
+  }
+  p, .text, .body-text {
+    font-size: 14.5px !important;
+    line-height: 1.58 !important;
+    margin-bottom: 12px !important;
+  }
+  .text-lead {
+    font-size: 15.5px !important;
+    line-height: 1.6 !important;
+  }
+
+  /* Mobile Navbar & Brand */
+  .navbar {
+    padding: 8px 0 !important;
+  }
+  .navbar .brand img {
+    height: 38px !important;
+    width: 38px !important;
+  }
+  .navbar .brand span:first-child {
+    font-size: 15.5px !important;
+  }
+  .navbar .brand span:last-child {
+    font-size: 9px !important;
+  }
+
+  /* Mobile Cards & Bento Grids */
+  .service-card, .bento-card, .testimonial-card {
+    padding: 20px 18px !important;
+    border-radius: 14px !important;
+  }
+  
+  /* Mobile Streamlined Footer (Clean Vertical Flow) */
+  .footer__grid {
+    grid-template-columns: 1fr !important;
+    gap: 28px !important;
+  }
+  .footer {
+    padding: 44px 0 24px 0 !important;
+  }
+  .footer-subbar {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    gap: 12px !important;
+    padding-top: 18px !important;
+  }
+
+  /* Mobile Floating Buttons (No Overlap & Zero Shadows) */
+  #floating-whatsapp {
+    bottom: 16px !important;
+    left: 16px !important;
+    padding: 9px 15px !important;
+    font-size: 12.5px !important;
+    border-radius: 24px !important;
+    box-shadow: none !important;
+  }
+  #back-to-top {
+    bottom: 16px !important;
+    right: 16px !important;
+    width: 38px !important;
+    height: 38px !important;
+    box-shadow: none !important;
+  }
+
+  /* Mobile Touch-Friendly Buttons */
+  .btn-primary, .btn-secondary, .btn-whatsapp, .btn-magenta {
+    padding: 11px 20px !important;
+    font-size: 13.5px !important;
+    width: 100% !important;
+    justify-content: center !important;
+  }
+
+  /* Lightweight Mobile Reveal (Smooth & Battery Friendly) */
+  .reveal-blur {
+    filter: blur(10px) !important;
+    transform: translateY(22px) scale(0.98) !important;
+    transition-duration: 0.85s !important;
+  }
+}
+
+/* ========================================================
+   DYNAMIC ANIMATIONS & SMOOTH SCROLLING SUITE
+   ======================================================== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Scroll progress indicator line at top of viewport */
+#scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #ED1D7F, #233E85, #25D366);
+  width: 0%;
+  z-index: 9999;
+  transition: width 0.1s ease-out;
+  pointer-events: none;
+}
+
+/* Dynamic Sticky Navbar state */
+.navbar {
+  position: sticky !important;
+  top: 0;
+  z-index: 1000;
+  background-color: #FFFFFF !important;
+  border-bottom: 1px solid #EEF2F4;
+  transition: background-color 0.35s ease, backdrop-filter 0.35s ease, padding 0.35s ease;
+}
+
+.navbar.scrolled {
+  background: rgba(255, 255, 255, 0.96) !important;
+  backdrop-filter: blur(14px) saturate(180%);
+  -webkit-backdrop-filter: blur(14px) saturate(180%);
+  box-shadow: none !important;
+  border-bottom: 1px solid #DCE5F5;
+}
+
+/* --- BLURRED REVEAL SCROLL ANIMATIONS (LUXURIOUS, DEEP & PERCEPTIBLE) --- */
+.reveal-blur {
+  opacity: 0;
+  filter: blur(18px);
+  transform: translateY(40px) scale(0.97);
+  transition: opacity 1.15s cubic-bezier(0.16, 1, 0.3, 1),
+              filter 1.15s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 1.15s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, filter, transform;
+}
+
+.reveal-blur.revealed {
+  opacity: 1 !important;
+  filter: blur(0px) !important;
+  transform: translateY(0) scale(1) !important;
+}
+
+/* Deliberate, perceptible staggered delays for cards */
+.stagger-1 { transition-delay: 0.10s; }
+.stagger-2 { transition-delay: 0.22s; }
+.stagger-3 { transition-delay: 0.34s; }
+.stagger-4 { transition-delay: 0.46s; }
+.stagger-5 { transition-delay: 0.58s; }
+.stagger-6 { transition-delay: 0.70s; }
+
+/* Subtle Hero Entry Reveal */
+.hero-fade-in {
+  animation: heroEntrance 0.85s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes heroEntrance {
+  0% {
+    opacity: 0;
+    filter: blur(12px);
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+  }
+}
+
+/* Interactive FAQ Accordion Transitions */
+.faq-item {
+  transition: border-color 0.25s ease, transform 0.25s ease;
+}
+
+.faq-item.active {
+  border-color: #233E85 !important;
+  box-shadow: none !important;
+}
+
+.faq-item .faq-q {
+  transition: color 0.2s ease;
+}
+
+.faq-item .faq-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #EEF3FA;
+  color: #233E85;
+  font-size: 18px;
+  font-weight: 600;
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), background-color 0.25s ease, color 0.25s ease;
+  flex-shrink: 0;
+}
+
+.faq-item.active .faq-icon {
+  transform: rotate(45deg);
+  background: #233E85;
+  color: #FFFFFF;
+}
+
+.faq-item .faq-a {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding-top: 0;
+  padding-bottom: 0;
+  transition: max-height 0.38s cubic-bezier(0.16, 1, 0.3, 1),
+              opacity 0.3s ease,
+              padding 0.3s ease;
+}
+
+.faq-item.active .faq-a {
+  max-height: 420px;
+  opacity: 1;
+  padding-top: 0;
+  padding-bottom: 20px;
+}
+
+/* Floating Back-To-Top Button */
+#back-to-top {
+  position: fixed;
+  bottom: 26px;
+  right: 26px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #233E85;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: none !important;
+  cursor: pointer;
+  z-index: 999;
+  border: none;
+  opacity: 0;
+  transform: translateY(20px) scale(0.85);
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), background-color 0.2s ease;
+}
+
+#back-to-top.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+}
+
+#back-to-top:hover {
+  background: #172A5C;
+  transform: translateY(-3px) scale(1.05);
+}

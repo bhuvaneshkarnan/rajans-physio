@@ -1,0 +1,17 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Temporary screenshot captures
+*.tmp
+verify_*.png
+test_*.png
+crop_*.png
+desk_*.png
+mob_*.png
+
+# OS metadata
+Thumbs.db
+ehthumbs.db
+.DS_Store

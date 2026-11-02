@@ -1,0 +1,258 @@
+{
+  "business_profile": {
+    "clinic_name": "Rajan's Physiotherapy & Pain Relief Centre",
+    "alternate_names": [
+      "Rajan's Pain Clinic",
+      "Rajan's Clinic - Pain Free Life"
+    ],
+    "established_year": 2009,
+    "tagline": "Experience. Expertise. Personalised Care.",
+    "core_differentiators": [
+      "Experienced Care Since 2009",
+      "Expert Manual Therapy & Dorn Spinal Therapy",
+      "Advanced Laser & Radial Shockwave Therapy",
+      "Non-Invasive, Drug-Free Healing",
+      "Personalised Pain Management & Root-Cause Resolution",
+      "Focus on Faster, Functional Recovery"
+    ],
+    "introduction": "Rajan's Physiotherapy and Pain Relief Centre is a dedicated physiotherapy and rehabilitation centre committed to delivering professional, evidence-informed, and patient-centred care. Established in 2009, the centre focuses on pain management, functional rehabilitation, mobility restoration, and improving patients' overall quality of life. Led by Dr. Prabhu Rajan PT, (MIAP L-27944), a senior physiotherapist with 17 years of experience specializing in sports and musculoskeletal rehabilitation, the centre provides individualised treatment plans tailored to each patient's condition, functional limitations, and rehabilitation goals."
+  },
+  "lead_physiotherapist": {
+    "name": "Dr. Prabhu Rajan, PT",
+    "full_name_formal": "Dr. Prabhu Rajan (Dr. Prabhu R, PT)",
+    "designation": "Chief Physiotherapist & Sports Rehabilitation Specialist",
+    "miap_reg_no": "MIAP L-27944",
+    "experience_years": 17,
+    "degrees_and_qualifications": [
+      "BPT (Bachelor of Physiotherapy) - The Tamil Nadu Dr. M.G.R. Medical University (2009)",
+      "MPT / MPTh (Master of Sports Physiotherapy) - The Tamil Nadu Dr. M.G.R. Medical University (2013)",
+      "Dr.Acu / D.Ac (Doctorate in Acupuncture) - University of Colombo (2012)",
+      "Dip. Osteo (Diploma in Osteopathy)",
+      "Dip. Mcp (Diploma in Manual Chiropractic Practice)",
+      "Dip. Varma (Diploma in Varma Therapy)",
+      "Dip. EAcu (Diploma in Electro-Acupuncture)",
+      "CDNT (Certified Dry Needling Therapist - USA)",
+      "CEMT (Certified Electro-Physical Modalities Therapist)",
+      "CEOMT (Certified Exercise & Orthopedic Manual Therapist)",
+      "CKT (Certified Kinesio Taping Therapist)",
+      "Certified International Dorn Method Spinal Therapist"
+    ],
+    "specializations": [
+      "Sports & Orthopedic Manual Therapy",
+      "Dorn Spinal Alignment Therapy",
+      "Musculoskeletal Injury Rehabilitation",
+      "Advanced Electro-Physical Modalities",
+      "Trigger Point & Myofascial Release"
+    ],
+    "leadership_awards": [
+      "Vice Chairman - AIDTA (All India Dorn Therapy Association)",
+      "Member - Indian Association of Physiotherapists (MIAP L-27944)"
+    ],
+    "consulting_team": [
+      {
+        "name": "Dr. Ravi, PT",
+        "role": "Consultant Physiotherapist"
+      }
+    ]
+  },
+  "contact_and_location": {
+    "phone": "+91 90426 12895",
+    "alternate_phone": "+91 98405 12895",
+    "whatsapp": "+91 90426 12895",
+    "email": "rajansphysio2009@gmail.com",
+    "address": "No. 9 / 29C, 1st Cross Street, Nagappa Nagar / New Colony, Chromepet, Chennai - 600044",
+    "landmark": "Behind Chromepet Police Station / Shastri Colony",
+    "google_maps_share_links": [
+      "https://share.google/tpyR96H2jyHYaLHxz",
+      "https://share.google/JnsCCcPRI5WMcl2mw"
+    ],
+    "geo_coordinates": {
+      "latitude": 12.95384,
+      "longitude": 80.14117
+    },
+    "working_hours": {
+      "monday_to_friday": "9:30 AM \u2013 2:00 PM & 4:00 PM \u2013 8:30 PM",
+      "saturday": "9:00 AM \u2013 5:00 PM",
+      "sunday": "Closed (Holiday / Emergency by appointment)"
+    },
+    "languages_spoken": [
+      "Tamil",
+      "English",
+      "Telugu",
+      "Malayalam"
+    ]
+  },
+  "services_and_treatments": [
+    {
+      "name": "Orthopedic & Sports Manual Therapy",
+      "description": "Hands-on specialized mobilization, chiropractic adjustments, and joint manipulation to relieve stiffness, restore joint mechanics, and accelerate return to athletics and daily activities."
+    },
+    {
+      "name": "Dorn Method Spinal Alignment",
+      "description": "A gentle, non-invasive vertebrae alignment technique without cracking or surgery, targeting spinal subluxations, disc compression, sciatica, neck ache, and scoliosis."
+    },
+    {
+      "name": "Advanced Laser & Scanning Laser Therapy",
+      "description": "High-intensity therapeutic laser that penetrates deep soft tissues to reduce acute/chronic inflammation, stimulate ATP cellular repair, and relieve deep tendon and ligament pain."
+    },
+    {
+      "name": "Radial Extracorporeal Shockwave Therapy (ESWT)",
+      "description": "Non-invasive acoustic wave therapy specifically effective for chronic calcifications, heel spurs, plantar fasciitis, tennis elbow, and stubborn tendinopathies."
+    },
+    {
+      "name": "TECAR Therapy (Radiofrequency)",
+      "description": "Radiofrequency-based deep diathermy treatment that increases microcirculation, relaxes intense muscle spasms, and accelerates cellular healing."
+    },
+    {
+      "name": "Clinical Dry Needling (CDNT - USA)",
+      "description": "Precision filament needle insertion into taut neuromuscular trigger points to instantly eliminate deep muscular knots, spasm, and referred nerve pain."
+    },
+    {
+      "name": "Kinesio Cupping Therapy & IASTM",
+      "description": "Dynamic negative-pressure cupping and Instrument-Assisted Soft Tissue Mobilization to break up scar tissue, release fascial restrictions, and enhance lymph drainage."
+    },
+    {
+      "name": "Acupuncture & Acupressure (University of Colombo D.Ac)",
+      "description": "Holistic meridian and electro-acupuncture for holistic neuromuscular balance, neuropathic pain management, and systemic relief."
+    },
+    {
+      "name": "Electrotherapy Modalities",
+      "description": "Comprehensive clinical modalities including Interferential Therapy (IFT), Ultrasonic Therapy (UST), Electrical Muscle Stimulation (EMS), Shortwave Diathermy (SWD), and Cryotherapy."
+    },
+    {
+      "name": "Kinesio Taping (CKT)",
+      "description": "Functional neuromuscular taping to support weak joints, decrease swelling, improve proprioception, and protect muscles during rehabilitation."
+    },
+    {
+      "name": "Varma Therapy",
+      "description": "Traditional Indian vital point therapy practiced for neurological, neuromuscular, and chronic pain alleviation."
+    },
+    {
+      "name": "Home Physiotherapy Visits",
+      "description": "Personalized home rehabilitation visits for post-operative, elderly, or severely immobile patients unable to travel to the clinic."
+    }
+  ],
+  "conditions_treated": [
+    "Cervical & Lumbar Spondylitis",
+    "Disc Bulge / Herniated Disc (L3-L4, L4-L5, L5-S1)",
+    "Sciatica & Radiating Nerve Pain",
+    "Frozen Shoulder & Rotator Cuff Tears",
+    "Knee Osteoarthritis, Meniscus & Ligament Injuries (ACL, PCL)",
+    "Plantar Fasciitis, Calcaneal Spur & Ankle Sprains",
+    "Tennis Elbow & Golfer's Elbow",
+    "Post-Operative Orthopedic Rehabilitation (Joint Replacements, Fractures)",
+    "Headaches, Migraines & Postural Neck Strain",
+    "Sports Fractures, Muscle Tears & Athletic Recovery"
+  ],
+  "appointments_and_pricing": {
+    "consultation_fee": "Rs. 600",
+    "follow_up_session": "Based on individualized treatment plan",
+    "home_visit_charges": "Based on distance & therapy requirements",
+    "booking_methods": [
+      "Phone Call",
+      "WhatsApp (+91 90426 12895)"
+    ],
+    "payment_methods": [
+      "Cash",
+      "Google Pay (GPay) / UPI"
+    ],
+    "insurance_reimbursement": "Direct cash/UPI; documentation provided for applicable reimbursement claims"
+  },
+  "reputation_and_ratings": {
+    "practo_recommendation_rate": "99% Positive",
+    "practo_ratings_count": 513,
+    "practo_review_stories": 243,
+    "justdial_rating": "4.9 / 5.0 Stars",
+    "justdial_review_count": "730+ Reviews"
+  },
+  "patient_testimonials": [
+    {
+      "patient_name": "Devi.S.P",
+      "condition": "Severe Knee Pain, Old Ligament Tear & Stair Climbing Disability",
+      "review": "When I met the Doctor, I was not able to walk properly and while sitting too had severe pain. I fell down years back and had a ligament tear in my knee which I didn't operate. I met Doctor with very little hope, but he never asked me to take x-rays or scans. Just by touching he found out the problem. During the second sitting, I found enormous improvement. He has magic in his fingers\u2014he does trigger release for muscle pain in seconds. Now I am able to climb stairs normally, which I couldn't do for 10 long years. It was an emotional moment for me and my daughter. I strongly believe God sent an angel in the form of Dr. Prabhu Rajan."
+    },
+    {
+      "patient_name": "Mrs. Hema",
+      "condition": "15-Year Chronic L3-L4 Disc Bulge & Cervical Spondylitis",
+      "review": "Dr. Prabhu is experienced in handling pain arising out of cervical & lumbar spondylitis or disc bulge and sports injuries. By identifying the underlying problem behind the pain, he explains the issue in layman's language and recommends treatment\u2014dorn/manual therapy along with relevant exercises. I have been living with pain for 15 years, consulted orthos, tried ayurveda, but within the first 10 sessions and basic exercises, my pain subsided completely without any medicines! I highly recommend Dr. Prabhu to anyone suffering from chronic pain before deciding to wear neck collars or back belts."
+    },
+    {
+      "patient_name": "Santhosh Kumarr",
+      "condition": "Musculoskeletal Pain & Rehabilitation",
+      "review": "When I first met Dr. Prabhu, he made me completely comfortable in explaining my condition and history. He created a calm, reassuring environment and is professional to the core. He takes immense personal care during treatment, instructs his team clearly, and stays highly interactive so patients feel genuinely cared for. Highly recommended!"
+    },
+    {
+      "patient_name": "Viswapriya",
+      "condition": "Knee Pain & Functional Strengthening",
+      "review": "I consulted Dr. Prabhu when I had persistent knee pain. He listened patiently, analyzed the issue to find the root cause, and never scared me with technical jargon. He taught targeted knee strengthening exercises that solved the problem permanently. I am deeply thankful that I have not experienced any recurrence of knee pain since!"
+    }
+  ],
+  "extracted_images": [
+    {
+      "title": "Dr. Prabhu Rajan, PT (Profile Portrait)",
+      "file_name": "dr_prabhu_rajan_profile.jpg",
+      "relative_path": "extracted_data/images/dr_prabhu_rajan_profile.jpg",
+      "category": "Practitioner Photo"
+    },
+    {
+      "title": "Dr. Prabhu Rajan, PT (Avatar)",
+      "file_name": "dr_prabhu_rajan_avatar.jpg",
+      "relative_path": "extracted_data/images/dr_prabhu_rajan_avatar.jpg",
+      "category": "Practitioner Avatar"
+    },
+    {
+      "title": "Clinic Exterior Street View & Signboard",
+      "file_name": "clinic_photo_banner_1.jpg",
+      "relative_path": "extracted_data/images/clinic_photo_banner_1.jpg",
+      "category": "Clinic Exterior"
+    },
+    {
+      "title": "Clinic Entrance Gate & Parking Sign",
+      "file_name": "clinic_entrance.jpg",
+      "relative_path": "extracted_data/images/clinic_entrance.jpg",
+      "category": "Clinic Entrance"
+    },
+    {
+      "title": "Clinic Reception & Waiting Lounge",
+      "file_name": "clinic_interior_reception.jpg",
+      "relative_path": "extracted_data/images/clinic_interior_reception.jpg",
+      "category": "Clinic Interior"
+    },
+    {
+      "title": "Doctor Consultation Desk with Spinal Anatomy Model",
+      "file_name": "clinic_treatment_room_1.jpg",
+      "relative_path": "extracted_data/images/clinic_treatment_room_1.jpg",
+      "category": "Consultation Room"
+    },
+    {
+      "title": "Clinical Dorn Method & Services Wall Graphics",
+      "file_name": "clinic_consultation_area.jpg",
+      "relative_path": "extracted_data/images/clinic_consultation_area.jpg",
+      "category": "Clinic Wall Graphics"
+    },
+    {
+      "title": "LASERSTIM High-Intensity Laser Therapy Equipment",
+      "file_name": "clinic_treatment_beds.jpg",
+      "relative_path": "extracted_data/images/clinic_treatment_beds.jpg",
+      "category": "Laser Equipment"
+    },
+    {
+      "title": "Electroson 608 Ultrasound & Electrotherapy Workstation",
+      "file_name": "clinic_therapy_equipment.jpg",
+      "relative_path": "extracted_data/images/clinic_therapy_equipment.jpg",
+      "category": "Electrotherapy Equipment"
+    },
+    {
+      "title": "Specialist Consultation Signboard",
+      "file_name": "clinic_photo_banner_2.jpg",
+      "relative_path": "extracted_data/images/clinic_photo_banner_2.jpg",
+      "category": "Signboard"
+    },
+    {
+      "title": "Clinic Exterior Identification Board",
+      "file_name": "clinic_exterior_board.jpg",
+      "relative_path": "extracted_data/images/clinic_exterior_board.jpg",
+      "category": "Exterior Board"
+    }
+  ]
+}
